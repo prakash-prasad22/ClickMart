@@ -1,0 +1,39 @@
+/* ──────────────────────────────────────────────────────────────
+   ClickMart theme tokens
+   Change these values to re-skin the whole store + admin panel.
+   Colours are space-separated RGB channels so Tailwind can apply
+   opacity, e.g. bg-primary/10.
+   ────────────────────────────────────────────────────────────── */
+:root {
+  /* Brand */
+  --primary: 196 82 30;        /* saffron   #C4521E */
+  --primary-deep: 150 59 18;   /* hover     #963B12 */
+  --primary-soft: 252 238 228; /* tint      #FCEEE4 */
+  --primary-fg: 255 255 255;   /* text on primary */
+  --accent: 168 125 60;        /* antique gold #A87D3C */
+  --accent-soft: 246 238 224;
+
+  /* Neutrals (warm) */
+  --ink: 27 24 20;             /* headings / body text */
+  --ink-soft: 61 55 48;
+  --muted: 117 108 98;         /* secondary text */
+  --bg: 250 247 242;           /* page background (ivory) */
+  --surface: 255 255 255;      /* cards */
+  --surface-alt: 243 238 230;  /* subtle panels */
+  --line: 232 225 214;         /* borders */
+
+  /* Status */
+  --success: 39 120 74;   --success-soft: 230 243 234;
+  --warning: 168 108 22;  --warning-soft: 251 241 222;
+  --danger: 186 52 40;    --danger-soft: 251 231 228;
+  --info: 41 105 173;     --info-soft: 229 239 250;
+
+  /* Admin panel */
+  --admin-sidebar: 21 29 45;       /* #151D2D */
+  --admin-sidebar-line: 38 49 70;
+  --admin-sidebar-text: 170 180 198;
+  --admin-bg: 244 246 250;
+
+  /* Shape */
+  --radius: 14px;
+}
