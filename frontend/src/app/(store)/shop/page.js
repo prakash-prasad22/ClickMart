@@ -53,7 +53,7 @@ export default async function ShopPage({ searchParams }) {
             {data?.items?.length ? (
               <ProductGrid products={data.items} className="lg:grid-cols-3" />
             ) : (
-              <EmptyState icon={PackageSearch} title="Nothing here yet" description="Try removing a filter or searching for something else." action={<Link href="/shop" className="btn btn-outline">Clear filters</Link>} />
+              <EmptyState icon={<PackageSearch size={26} strokeWidth={1.6} />} title="Nothing here yet" description="Try removing a filter or searching for something else." action={<Link href="/shop" className="btn btn-outline">Clear filters</Link>} />
             )}
 
             {pages > 1 && (

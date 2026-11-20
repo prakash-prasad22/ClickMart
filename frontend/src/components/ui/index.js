@@ -107,12 +107,13 @@ export function QtyStepper({ value, onChange, min = 1, max = 99, size = 'md' }) 
   );
 }
 
-export function EmptyState({ icon: Icon, title, description, action, className }) {
+export function EmptyState({ icon, title, description, action, className }) {
+  const Icon = typeof icon === 'function' ? icon : null;
   return (
     <div className={cn('flex flex-col items-center justify-center px-6 py-16 text-center', className)}>
-      {Icon && (
+      {icon && (
         <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-full bg-primary-soft text-primary">
-          <Icon size={26} strokeWidth={1.6} />
+          {Icon ? <Icon size={26} strokeWidth={1.6} /> : icon}
         </div>
       )}
       <h3 className="font-display text-xl font-medium">{title}</h3>
